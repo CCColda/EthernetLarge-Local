@@ -30,7 +30,7 @@
 
 // Require Ethernet.h, because we need MAX_SOCK_NUM
 #ifndef ethernet_h_
-#error "Ethernet.h must be included before w5100.h"
+#error "EthernetLarge.h must be included before w5100.h"
 #endif
 
 
