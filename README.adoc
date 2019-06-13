@@ -2,6 +2,8 @@
 
 With the Arduino Ethernet Shield, this library allows an Arduino board to connect to the internet.
 
+This libarary has been modified by the OPEnS Lab to support larger read/write buffers per socket, allowing big protocols (such as TLS) to function properly. For more information please see https://github.com/OPEnSLab-OSU/SSLClient#sslclient-with-ethernet
+
 For more information about this library please visit us at
 https://www.arduino.cc/en/Reference/Ethernet
 
