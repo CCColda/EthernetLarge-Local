@@ -9,7 +9,8 @@
  */
 
 #include <Arduino.h>
-#include "EthernetLarge.h"
+
+#include "../EthernetLarge.h" // as a local library, EthernetLarge is not added to includePath
 #include "w5100.h"
 
 

@@ -1,4 +1,28 @@
-= Modified Ethernet Library for SSLClient =
+= EthernetLarge library modified for local usage =
+This fork changes an include in `utility/w5100.cpp`, so that the EthernetLarge library can be
+used as a submodule embedded into a project source directory.
+
+Example project structure:
+```txt
+project
+├-src
+│ ├-EthernetLarge-Local
+│ └-test.cpp
+└-project.ino
+```
+
+"EthernetLarge-Local" should be included with a relative path, such as:
+```cpp
+// in test.cpp
+#include "EthernetLarge-Local/src/EthernetLarge.h"
+```
+
+To add the library, use the command:
+```sh
+git submodule add https://github.com/CCColda/EthernetLarge-Local folder_name
+```
+
+== Modified Ethernet Library for SSLClient ==
 
 This libarary has been modified by the OPEnS Lab to support larger read/write buffers per socket, allowing big protocols (such as TLS) to function properly. For more information please see https://github.com/OPEnSLab-OSU/SSLClient#sslclient-with-ethernet
 
